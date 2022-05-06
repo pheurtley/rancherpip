@@ -1,0 +1,9 @@
+stages:
+- name: push-image
+  steps:
+  - publishImageConfig:
+      dockerfilePath: ./Dockerfile
+      buildContext: .
+      tag: pheurtley/orangeid:nginx-test
+      pushRemote: true
+      registry: index.docker.io
