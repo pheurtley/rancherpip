@@ -6,4 +6,8 @@ stages:
       buildContext: .
       tag: pheurtley/orangeid:nginx-test
       pushRemote: true
-      registry: DockerHub
+      registry: ${docker-registry}
+      envFrom:
+        sourceName: pheurtley-hub
+        sourceKey: .dockerconfigjson
+        targetKey: docker-registry
