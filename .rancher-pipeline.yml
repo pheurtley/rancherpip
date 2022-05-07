@@ -4,7 +4,7 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: pheurtley/orangeid:nginx-test
+      tag: ${docker-registry}/pheurtley/orangeid:nginx-test
       pushRemote: true
       registry: ${docker-registry}
       envFrom:
