@@ -6,4 +6,5 @@ stages:
       buildContext: .
       tag: pheurtley/orangeid:nginx-test
       pushRemote: true
-      registry: pheurtley-hub
+      registry: index.docker.io
+notification: {}
