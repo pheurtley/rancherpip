@@ -4,9 +4,9 @@ stages:
   - publishImageConfig:
       dockerfilePath: ./Dockerfile
       buildContext: .
-      tag: ${docker-registry}/pheurtley/orangeid:nginx-test
+      tag: pheurtley/orangeid:nginx-test
       pushRemote: true
-      registry: ${docker-registry}
+      registry: index.docker.io
       envFrom:
         sourceName: docker-hub-ph
         sourceKey: .dockerconfigjson
