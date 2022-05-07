@@ -8,6 +8,6 @@ stages:
       pushRemote: true
       registry: ${docker-registry}
       envFrom:
-        sourceName: pheurtley-hub
+        sourceName: docker-hub-ph
         sourceKey: .dockerconfigjson
         targetKey: docker-registry
