@@ -7,6 +7,9 @@ stages:
       tag: pheurtley/orangeid:nginx-test
       pushRemote: true
       registry: index.docker.io
+      env:
+        PLUGIN_DEBUG: "true"
+        PLUGIN_INSECURE: "true"
       envFrom:
         sourceName: docker-hub-ph
         sourceKey: .dockerconfigjson
